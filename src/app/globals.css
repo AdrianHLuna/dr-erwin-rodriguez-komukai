@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+/*
+ * Paleta real de marca (rescatada del sitio de referencia en Vercel/Envato
+ * ya construido para este doctor): azul-pizarra oscuro como base de todo el
+ * sitio (no solo el Hero) + teal como único acento vivo. A diferencia de los
+ * demás sitios del registro, aquí el fondo oscuro ES la identidad completa,
+ * no solo el Hero — el "ADN" que el usuario pidió rescatar explícitamente.
+ */
+:root {
+  --primary: oklch(0.38 0.03 265); /* #3f465e azul-pizarra, fondo y superficie dominante */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.3 0.025 265); /* tono más oscuro de la misma familia, para slate-950 */
+  --secondary-foreground: oklch(0.95 0.01 265);
+  --accent: oklch(0.72 0.08 195); /* #70b1b5 teal, único acento vivo */
+  --accent-foreground: oklch(0.15 0.02 195);
+  --background: oklch(0.38 0.03 265); /* el sitio entero vive sobre el azul-pizarra */
+  --surface: oklch(0.32 0.028 265); /* tarjetas: un tono más oscuro que el fondo */
+  --foreground: oklch(0.98 0.004 270);
+  --muted: oklch(0.42 0.028 265);
+  --muted-foreground: oklch(0.78 0.015 270);
+  --border: oklch(1 0 0 / 8%);
+
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* ─── Utilidades rescatadas de la referencia, adaptadas a los tokens del
+   proyecto (nunca hex sueltos) ──────────────────────────────────────── */
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: all 300ms ease;
+  box-shadow: 0 10px 30px -10px color-mix(in oklch, var(--accent) 40%, transparent);
+}
+.btn-accent:hover {
+  filter: brightness(1.08);
+}
+.btn-accent:active {
+  transform: scale(0.97);
+}
+
+.icon-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: color-mix(in oklch, white 10%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+  border: 1px solid color-mix(in oklch, white 5%, transparent);
+}
+
+.sub-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+  background: color-mix(in oklch, var(--accent) 10%, transparent);
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in oklch, var(--accent) 20%, transparent);
+}
+
+.title-heading {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--foreground);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+}
+@media (min-width: 768px) {
+  .title-heading {
+    font-size: 3rem;
+  }
+}
+
+/* Textura de líneas verticales, usada como fondo ambiental detrás de cada
+   sección — rescatada literalmente de la referencia. */
+.grid-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, color-mix(in oklch, white 5%, transparent) 1px, transparent 1px);
+  background-size: 25% 100%;
+}
+
+/* "Tarjeta de especialidad": esquinas enormes + borde que se enciende en
+   hover — identidad de tarjeta de este sitio (ningún otro sitio del registro
+   usa radios tan grandes ni este tratamiento de "encendido" de borde). */
+.uro-card {
+  border-radius: 2.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: border-color 700ms ease, background-color 700ms ease;
+}
+.uro-card:hover {
+  border-color: color-mix(in oklch, var(--accent) 40%, transparent);
+}
+
+@keyframes slow-zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-in-out infinite;
+}
+
+/* Bob continuo de la tarjeta flotante del Hero — distinto del giro/pulso de
+   otros sitios del registro (ver AGENTS.md §1, "animación continua"). */
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+.animate-hero-float {
+  animation: hero-float 4s ease-in-out infinite;
+}
+
+/* Rotación continua lentísima — usada en los íconos de especialidad del
+   fondo decorativo (UrologyPatterns), casi imperceptible. */
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-slow-spin {
+  animation: slow-spin 40s linear infinite;
+}
+
+/* Marquee horizontal infinito, usado en la franja de certificaciones. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
