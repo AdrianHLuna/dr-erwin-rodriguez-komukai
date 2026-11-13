@@ -7,9 +7,9 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import MedicalReviewByline from "@/components/MedicalReviewByline";
 import AlarmSignsSection from "@/components/AlarmSignsSection";
-import CardImageHeader from "@/components/CardImageHeader";
 import DetailSidebar from "@/components/DetailSidebar";
 import FaqAccordion from "@/components/FaqAccordion";
+import { iconForText } from "@/lib/contentIcons";
 
 export const dynamicParams = false;
 
@@ -60,10 +60,39 @@ export default async function SymptomPage(props: PageProps<"/sintomas/[slug]">) 
         <DetailSidebar related={related} />
 
         <article>
-          <header className="mb-6">
-            <CardImageHeader src={symptom.image} alt={symptom.name} aspect="16/10" />
-            <h1 className="font-heading mt-6 text-3xl font-bold text-foreground">{symptom.name}</h1>
-            <div className="mt-3">
+          <header className="mb-8 rounded-[2.5rem] border border-border bg-surface p-7 shadow-xl md:p-9">
+            <div className="flex items-center gap-5">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-accent/10 text-accent">
+                {(() => {
+                  const Icon = iconForText(symptom.name);
+                  return <Icon size={32} />;
+                })()}
+              </div>
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+                  Orientación Médica Urológica
+                </span>
+                <h1 className="font-heading mt-1 text-2xl font-black tracking-tight text-foreground sm:text-3xl md:text-4xl">
+                  {symptom.name}
+                </h1>
+              </div>
+            </div>
+
+            {symptom.colloquialNames && symptom.colloquialNames.length > 0 && (
+              <div className="mt-6 flex flex-wrap items-center gap-2 border-t border-border/60 pt-4 text-xs text-muted-foreground">
+                <span className="font-semibold text-foreground">Términos frecuentes:</span>
+                {symptom.colloquialNames.map((name) => (
+                  <span
+                    key={name}
+                    className="rounded-full border border-border bg-background px-3 py-1 font-medium text-foreground/80"
+                  >
+                    {name}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            <div className="mt-5 border-t border-border/60 pt-4">
               <MedicalReviewByline lastReviewed={symptom.lastReviewed} />
             </div>
           </header>

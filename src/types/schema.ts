@@ -125,7 +125,7 @@ export const MedicalConditionSchema = z.object({
   relatedServices: z.array(z.string()).optional(),
   relatedSymptoms: z.array(z.string()).optional(),
   lastReviewed: z.string().regex(ISO_DATE).optional(),
-  image: z.string(),
+  image: z.string().optional(),
   sameAs: z.string().url().optional(),
   seo: SEOSchema,
 });
@@ -150,7 +150,7 @@ export const MedicalServiceSchema = z.object({
   relatedConditions: z.array(z.string()).optional(),
   lastReviewed: z.string().regex(ISO_DATE).optional(),
   video: VideoSchema.optional(),
-  image: z.string(),
+  image: z.string().optional(),
   seo: SEOSchema,
 });
 
@@ -167,7 +167,7 @@ export const SymptomSchema = z.object({
   faqs: z.array(FAQItemSchema).min(2).optional(),
   relatedConditions: z.array(z.string()),
   lastReviewed: z.string().regex(ISO_DATE).optional(),
-  image: z.string(),
+  image: z.string().optional(),
   seo: SEOSchema,
 });
 
@@ -189,7 +189,7 @@ export const AnatomySchema = z.object({
   name: z.string(),
   description: z.string(),
   relatedDiseases: z.array(z.string()),
-  image: z.string(),
+  image: z.string().optional(),
 });
 
 // ─── Tipos inferidos ───────────────────────────────────────────

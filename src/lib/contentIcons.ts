@@ -8,6 +8,8 @@ import {
   CircleAlert,
   Flame,
   Clock,
+  HeartPulse,
+  Timer,
   type LucideIcon,
 } from "lucide-react";
 
@@ -23,6 +25,10 @@ export function iconForText(text: string): LucideIcon {
   if (t.includes("sangre")) return Droplets;
   if (t.includes("noct") || t.includes("noche") || t.includes("dormir")) return Moon;
   if (t.includes("urgenc") || t.includes("retención") || t.includes("retencion")) return ShieldAlert;
+  if (t.includes("incontinencia")) return ShieldAlert;
+  if (t.includes("erecci") || t.includes("sexual")) return HeartPulse;
+  if (t.includes("eyaculaci")) return Timer;
+  if (t.includes("secreci") || t.includes("uretral")) return Droplets;
   if (t.includes("cólico") || t.includes("colico") || t.includes("riñón") || t.includes("rinon")) return Zap;
   if (t.includes("dificultad") || t.includes("chorro")) return Activity;
   if (t.includes("testicul")) return CircleAlert;

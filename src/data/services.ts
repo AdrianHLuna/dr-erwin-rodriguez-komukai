@@ -81,7 +81,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-hiperplasia-prostatica-benigna"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/reseccion-transuretral-de-prostata.jpg",
+    image: "/images/services/reseccion-transuretral-prostata.png",
     seo: {
       title: "RTU de Próstata | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía endoscópica RTU de próstata para hiperplasia prostática benigna con el Dr. Erwin Rodríguez Komukai.",
@@ -124,7 +124,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-litiasis-renal"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/litotripsia-extracorporea.jpg",
+    image: "/images/services/litotricia-extracorporea.png",
     seo: {
       title: "Litotripsia Extracorpórea | Urólogo en Tuxtla Gutiérrez",
       description: "Tratamiento no invasivo de cálculos renales con ondas de choque con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez.",
@@ -167,7 +167,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-litiasis-renal"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/ureteroscopia-con-laser.jpg",
+    image: "/images/services/ureteroscopia-laser.png",
     seo: {
       title: "Ureteroscopia con Láser | Urólogo en Tuxtla Gutiérrez",
       description: "Tratamiento endoscópico con láser de cálculos ureterales con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez.",
@@ -211,7 +211,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-fimosis-y-parafimosis"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/circuncision.jpg",
+    image: "/images/services/circuncision.png",
     seo: {
       title: "Circuncisión en Adultos | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de circuncisión en adultos para fimosis y parafimosis con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez.",
@@ -254,7 +254,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-varicocele"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/varicocelectomia.jpg",
+    image: "/images/services/varicocelectomia.png",
     seo: {
       title: "Varicocelectomía | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de varicocele (varicocelectomía) con el Dr. Erwin Rodríguez Komukai, Urólogo en Tuxtla Gutiérrez, Chiapas.",
@@ -297,7 +297,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-de-prostata"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/biopsia-de-prostata.jpg",
+    image: "/images/services/biopsia_prostata.png",
     seo: {
       title: "Biopsia de Próstata | Urólogo en Tuxtla Gutiérrez",
       description: "Biopsia de próstata guiada por ultrasonido con el Dr. Erwin Rodríguez Komukai, Urólogo en Tuxtla Gutiérrez, Chiapas.",
@@ -340,7 +340,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: [],
     lastReviewed: "2026-11-13",
-    image: "/images/services/vasectomia.jpg",
+    image: "/images/services/vasectomia.png",
     seo: {
       title: "Vasectomía | Urólogo en Tuxtla Gutiérrez",
       description: "Vasectomía como método anticonceptivo definitivo con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -383,7 +383,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-infeccion-de-vias-urinarias", "d-prostatitis", "d-cancer-de-vejiga", "d-its"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/cistoscopia.jpg",
+    image: "/images/services/cistoscopia.png",
     seo: {
       title: "Cistoscopia | Urólogo en Tuxtla Gutiérrez",
       description: "Cistoscopia diagnóstica y de seguimiento con el Dr. Erwin Rodríguez Komukai, Urólogo en Tuxtla Gutiérrez, Chiapas.",
@@ -426,7 +426,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-de-vejiga"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/reseccion-transuretral-de-tumor-vesical.jpg",
+    image: "/images/services/reseccion-tumor-vesical.png",
     seo: {
       title: "RTU de Tumor Vesical | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía endoscópica de tumor vesical (RTU-V) con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -469,7 +469,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-de-rinon"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/nefrectomia.jpg",
+    image: "/images/services/nefrectomia.png",
     seo: {
       title: "Nefrectomía Parcial o Total | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía renal (nefrectomía) para cáncer de riñón con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -512,7 +512,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: [],
     lastReviewed: "2026-11-13",
-    image: "/images/services/hidrocelectomia.jpg",
+    image: "/images/services/hidrocelectomia.png",
     seo: {
       title: "Hidrocelectomía | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de hidrocele (hidrocelectomía) con el Dr. Erwin Rodríguez Komukai, Urólogo en Tuxtla Gutiérrez, Chiapas.",
@@ -555,7 +555,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-cancer-de-testiculo"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/orquidopexia.jpg",
+    image: "/images/services/orquidopexia.png",
     seo: {
       title: "Orquidopexia | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de orquidopexia para testículo no descendido o torsión testicular con el Dr. Erwin Rodríguez Komukai.",
@@ -598,7 +598,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-estenosis-uretral", "d-litiasis-renal"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/colocacion-de-cateter-doble-j.jpg",
+    image: "/images/services/colocacion-cateter-doble-j.png",
     seo: {
       title: "Colocación de Catéter Doble J | Urólogo en Tuxtla Gutiérrez",
       description: "Colocación endoscópica de catéter doble J con el Dr. Erwin Rodríguez Komukai, Urólogo en Tuxtla Gutiérrez, Chiapas.",
@@ -641,7 +641,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-vejiga-hiperactiva"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/cirugia-de-incontinencia.jpg",
+    image: "/images/services/cirugia-incontinencia-urinaria.jpg",
     seo: {
       title: "Cirugía de Incontinencia | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de incontinencia con slings/mallas con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -684,7 +684,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-litiasis-renal"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/nefrolitotomia-percutanea.jpg",
+    image: "/images/services/nefrolitrotomia.jpg",
     seo: {
       title: "Nefrolitotomía Percutánea | Tuxtla Gutiérrez",
       description: "Cirugía percutánea para cálculos renales grandes con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -727,7 +727,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: ["d-disfuncion-erectil", "d-enfermedad-de-peyronie"],
     lastReviewed: "2026-11-13",
-    image: "/images/services/implante-de-protesis-de-pene.jpg",
+    image: "/images/services/implante-protesis-pene.png",
     seo: {
       title: "Implante de Prótesis de Pene | Urólogo en Tuxtla Gutiérrez",
       description: "Cirugía de implante de prótesis de pene con el Dr. Erwin Rodríguez Komukai en Tuxtla Gutiérrez, Chiapas.",
@@ -769,7 +769,7 @@ export const services: MedicalService[] = [
     ],
     relatedConditions: [],
     lastReviewed: "2026-11-13",
-    image: "/images/services/ultrasonido-de-rastreo.jpg",
+    image: "/img-doctor/dr-erwin-medical-equipment.jpg",
     seo: {
       title: "Ultrasonido Urológico | Urólogo en Tuxtla Gutiérrez",
       description: "Ultrasonido de rastreo urológico (renal, vesical, prostático, testicular) con el Dr. Erwin Rodríguez Komukai.",
