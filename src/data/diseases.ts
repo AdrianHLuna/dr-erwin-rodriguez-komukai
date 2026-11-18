@@ -60,7 +60,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-prostatectomia-radical", "s-biopsia-de-prostata"],
     relatedSymptoms: ["sy-dificultad-para-orinar", "sy-nocturia"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/cancer-prostata.png",
+    image: "/images/diseases/cancer-de-prostata.jpg",
     seo: {
       title: "Cáncer de Próstata | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -130,7 +130,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-rtu-prostata"],
     relatedSymptoms: ["sy-nocturia", "sy-dificultad-para-orinar", "sy-retencion-urinaria-aguda", "sy-polaquiuria"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/hiperplasia-prostatica-benigna.png",
+    image: "/images/diseases/hiperplasia-prostatica-benigna.jpg",
     seo: {
       title: "Hiperplasia Prostática Benigna | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -201,7 +201,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-litotripsia", "s-ureteroscopia-laser", "s-nefrolitotomia-percutanea", "s-cateter-doble-j"],
     relatedSymptoms: ["sy-colico-nefritico", "sy-sangre-en-la-orina"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/litiasis-renal.png",
+    image: "/images/diseases/litiasis-renal.jpg",
     seo: {
       title: "Litiasis Renal (Piedras en el Riñón) | Tuxtla Gutiérrez",
       description:
@@ -272,7 +272,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cistoscopia"],
     relatedSymptoms: ["sy-dolor-al-orinar", "sy-secrecion-uretral"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/infeccion-vias-urinarias.png",
+    image: "/images/diseases/infeccion-de-vias-urinarias.jpg",
     seo: {
       title: "Infección de Vías Urinarias | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -342,7 +342,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-implante-de-protesis-de-pene"],
     relatedSymptoms: ["sy-problemas-de-ereccion"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/disfuncion-erectil.png",
+    image: "/images/diseases/disfuncion-erectil.jpg",
     seo: {
       title: "Disfunción Eréctil | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -408,7 +408,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-varicocelectomia"],
     relatedSymptoms: ["sy-dolor-testicular"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/varicocele.png",
+    image: "/images/diseases/varicocele.jpg",
     seo: {
       title: "Varicocele | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -476,7 +476,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cistoscopia"],
     relatedSymptoms: ["sy-dolor-al-orinar", "sy-urgencia-urinaria", "sy-eyaculacion-precoz-o-dolorosa"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/prostatitis.png",
+    image: "/images/diseases/prostatitis.jpg",
     seo: {
       title: "Prostatitis | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -545,7 +545,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-circuncision"],
     relatedSymptoms: ["sy-secrecion-uretral"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/fimosis-parafimosis.png",
+    image: "/images/diseases/fimosis-y-parafimosis.jpg",
     seo: {
       title: "Fimosis y Parafimosis | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -613,7 +613,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-rtu-tumor-vesical", "s-cistoscopia"],
     relatedSymptoms: ["sy-sangre-en-la-orina"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/cancer-vejiga.png",
+    image: "/images/diseases/cancer-de-vejiga.jpg",
     seo: {
       title: "Cáncer de Vejiga | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -681,7 +681,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cistoscopia"],
     relatedSymptoms: ["sy-secrecion-uretral", "sy-dolor-testicular", "sy-dolor-al-orinar"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/its.png",
+    image: "/images/diseases/infecciones-de-transmision-sexual.jpg",
     seo: {
       title: "ITS | Urólogo en Tuxtla Gutiérrez, Chiapas",
       description:
@@ -751,7 +751,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cirugia-de-incontinencia"],
     relatedSymptoms: ["sy-urgencia-urinaria", "sy-incontinencia-urinaria", "sy-polaquiuria", "sy-nocturia"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/vejiga-hiperactiva.png",
+    image: "/images/diseases/vejiga-hiperactiva.jpg",
     seo: {
       title: "Vejiga Hiperactiva | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -820,7 +820,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-nefrectomia"],
     relatedSymptoms: ["sy-sangre-en-la-orina"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/cancer-rinon.png",
+    image: "/images/diseases/cancer-de-rinon.jpg",
     seo: {
       title: "Cáncer de Riñón | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -890,7 +890,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-cateter-doble-j"],
     relatedSymptoms: ["sy-dificultad-para-orinar", "sy-retencion-urinaria-aguda"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/estenosis-uretral.png",
+    image: "/images/diseases/estenosis-uretral.jpg",
     seo: {
       title: "Estenosis Uretral | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -956,7 +956,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-orquidopexia"],
     relatedSymptoms: ["sy-dolor-testicular"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/cancer-testiculo.png",
+    image: "/images/diseases/cancer-de-testiculo.jpg",
     seo: {
       title: "Cáncer de Testículo | Urólogo en Tuxtla Gutiérrez",
       description:
@@ -1025,7 +1025,7 @@ export const diseases: MedicalCondition[] = [
     relatedServices: ["s-implante-de-protesis-de-pene"],
     relatedSymptoms: ["sy-problemas-de-ereccion"],
     lastReviewed: "2026-11-13",
-    image: "/images/diseases/enfermedad-peyronie.png",
+    image: "/images/diseases/enfermedad-de-peyronie.jpg",
     seo: {
       title: "Enfermedad de Peyronie | Urólogo en Tuxtla Gutiérrez",
       description:
